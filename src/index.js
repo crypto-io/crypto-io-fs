@@ -10,14 +10,7 @@ export const direxists = (dir = '') => {
   return true;
 }
 
-export const exists = path => {
-  try {
-    existsSync(path);
-  } catch (e) {
-    return false;
-  }
-  return true;
-}
+export const exists = path => existsSync(path);
 
 export const mkdir = path => {
   const dir = dirname(path);

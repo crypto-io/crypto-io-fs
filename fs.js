@@ -13,14 +13,7 @@ const direxists = (dir = '') => {
   }
   return true;
 };
-const exists = path$$1 => {
-  try {
-    fs.existsSync(path$$1);
-  } catch (e) {
-    return false;
-  }
-  return true;
-};
+const exists = path$$1 => fs.existsSync(path$$1);
 const mkdir = path$$1 => {
   const dir = path.dirname(path$$1);
   if (!direxists(dir)) {
