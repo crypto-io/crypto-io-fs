@@ -6,11 +6,13 @@
   "author": "VandeurenGlenn <vandeurenglenn@gmail.com>",
   "license": "MIT",
   "backed": {
-    "bundles": [{
-      "src": "src/index.js",
-      "dest": "fs.js",
-      "format": "cjs"
-    }]
+    "bundles": [
+      {
+        "src": "src/index.js",
+        "dest": "fs.js",
+        "format": "cjs"
+      }
+    ]
   },
   "devDependencies": {
     "blue-tape": "^1.0.0"
